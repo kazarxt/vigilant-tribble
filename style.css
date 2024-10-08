@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car {
+    background: #e2e2e2;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(30% - 20px);
+}
+
+.car img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.car:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 13em;
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .car {
+        width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .car {
+        width: 100%; /* Одна машина в ряд на мобильных */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
